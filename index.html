@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://example.com/css/main.css">
     <!-- 합쳐지고 최소화된 최신 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- jquery 사용 -->
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <!-- 부가적인 테마 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -22,8 +24,9 @@
 </head>
 <body>
 
+  
     <div role="tabpanel">
-
+      jquery 적용
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
           <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
@@ -49,6 +52,8 @@
 })
 
 $('#myTab a[href="#profile"]').tab('show') // Select tab by name
+
+
 $('#myTab a:first').tab('show') // Select first tab
 $('#myTab a:last').tab('show') // Select last tab
 $('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
